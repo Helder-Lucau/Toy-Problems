@@ -20,7 +20,10 @@ Given a lowercase string that has alphabetic characters only and no spaces, retu
 
 * Clone the repository: `git@github.com:Helder-Lucau/Toy-Problems.git`
 * Navigate to the cloned repository using the command: `cd Toy-Problems`
-* Run Python File
+* Run on terminal:  
+```Challenge 1: python3 challenge1.py```
+```Challenge 2: python3 challenge2.py```
+```Challenge 3: python3 challenge3.py```
 
 ## Author
 * This project code files is authored by [Helder Lucau](https://github.com/Helder-Lucau).
