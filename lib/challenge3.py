@@ -1,14 +1,23 @@
-def convert_to_24_hour():
-    hour = int(input("Enter the hour (1-12): "))
-    minute = int(input("Enter the minute (0-59): "))
-    period = input("Enter 'am' or 'pm': ")
 
-    if period == "pm" and hour != 12:
-        hour += 12
-    elif period == "am" and hour == 12:
-        hour = 0
+def consonant_value(string):
+    vowels = "aeiou"
+    result = []
+    temp = ""
+    for char in string.lower():
+        if char in vowels:
+            if temp != "":
+                result.append(temp)
+                temp = ""
+        else:
+                temp += char
+    if temp != "":
+                result.append(temp)
+    # return result
+    for string in result:
+        for ch in string:
+              print(ord(ch) - 96)
     
-    result = f"{hour:02d}{minute:02d}"
-    print(f"The time in 24-hour format is: {result}")
+print(consonant_value("strength"))
 
-convert_to_24_hour()
+
+
