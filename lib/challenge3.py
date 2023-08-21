@@ -2,6 +2,7 @@
 def consonant_value(string):
     vowels = "aeiou"
     result = []
+    list = []
     temp = ""
     for char in string.lower():
         if char in vowels:
@@ -12,10 +13,14 @@ def consonant_value(string):
                 temp += char
     if temp != "":
                 result.append(temp)
-    # return result
     for string in result:
-        for ch in string:
-              print(ord(ch) - 96)
+        value = 0
+        for letter in string:
+            value += (ord(letter) - 96)
+        list.append(value)
+    list.sort(reverse=True)
+    return list[0]
+
     
 print(consonant_value("strength"))
 
